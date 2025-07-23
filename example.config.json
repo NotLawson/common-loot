@@ -1,0 +1,9 @@
+{
+    "stripe_api_key": "ENTER_STRIPE_API_KEY_HERE",
+    "app_secret_key": "random",
+    "db_host": "database",
+    "db_port": 5432,
+    "db_user": "postgres",
+    "db_password": "postgres",
+    "product_information": "products.json"
+}

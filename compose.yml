@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    ports:
+      - 5000:5000
+
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: common_loot
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
